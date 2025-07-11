@@ -462,11 +462,13 @@ main{
     .navbarGauche{
  
         font-size: 1.5rem;   
-        padding-left: 0.1rem;  
+        padding-left: 0.2rem;  
     }
 
     .navbarMilieu{
         font-size: 0.8rem;
+        margin-left: 0;
+        padding-right: 0.4rem;
     }
 
     #debut{     
@@ -568,9 +570,7 @@ main{
     html{
         font-size: 9.8px;
     }
-        .navbar{
-        gap: 5rem;
-    }
+
     #debut{     
         padding-top: 21rem; 
     }
@@ -591,10 +591,7 @@ main{
 @media all and (min-width: 300px) and (max-width: 375px) and (min-height:800px)
 {
 
-        .navbar{
-        gap: 1.2rem;
-        height: 4rem;
-    }
+
 }
 
 
@@ -613,12 +610,15 @@ main{
     }
     .navbarGauche{
  
-        font-size: 1.7rem;   
-        padding-left: 0;  
+        font-size: 1.6rem;   
+        padding-left: 0.2rem;  
+        
     }
 
     .navbarMilieu{
         font-size: 0.8rem;
+        margin-left: 0;
+        padding-right: 0.4rem;
     }
 
     #debut{     
@@ -753,10 +753,7 @@ main{
 @media all and (min-width: 375px) and (max-width: 414px) and (min-height:750px)
 {
 
-        .navbar{
-        gap: 0.6rem;
-        height: 4rem;
-    }
+
 
     
 }
@@ -775,11 +772,13 @@ main{
     .navbarGauche{
  
         font-size: 1.8rem;   
-        padding-left: 0;  
+        padding-left: 0.2rem;  
     }
 
     .navbarMilieu{
         font-size: 0.9rem;
+        margin-left: 0;
+        padding-right: 0.4rem;
     }
 
     #debut{     
@@ -926,7 +925,7 @@ main{
     .navbarGauche{
  
         font-size: 2rem;   
-        padding-left: 0;  
+        padding-left: 1rem;  
     }
 
     .navbarMilieu{
@@ -1380,19 +1379,14 @@ main{
 /*pour ajuter la taille ddu navbar*/
 @media all and (min-width: 570px) and (max-width:650px)
 {
-    .navbarGauche{
-        font-size: 2rem;
-        padding-left: 0.4rem;
-    }
-    .navbarMilieu{
-        font-size: 0.9rem;
-    }
+
+
 }
 @media all and (min-width: 490px) and (max-width:570px)
 {
     .navbarGauche{
         font-size: 1.5rem;
-        padding-left: 0.2rem;
+        padding-left: 1rem;
     }
     .navbarMilieu{
         font-size: 0.8rem;
