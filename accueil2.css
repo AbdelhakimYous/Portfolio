@@ -1,0 +1,1933 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: 0.5s ease-in appparaitre;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+main{
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 5px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 9;
+
+}
+.navbarGauche{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    white-space: nowrap;
+    padding-left: 150px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px #000000, 2px 2px 0px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+
+
+}
+.new{
+    cursor: grab;
+}
+.navbarMilieu{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 1rem;
+    padding-right: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 0 black,
+    2px 2px 0;
+
+
+}
+.navbarMilieu a{
+    color: white;
+    text-shadow: 2px 2px 0 black,
+    2px 2px 0;
+    transition: 1s ease-in;
+}
+
+.navbarMilieu a:hover{
+
+    transition: 1s ease-in;
+    color: rgb(38, 75, 179);
+}
+.ensemble{
+
+    background: linear-gradient(40deg ,rgb(49, 47, 47), rgb(19, 1, 66) );
+
+}
+#debut{
+
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+
+
+}
+.moiContainer{
+
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+
+}
+.moiContainer img{
+    position: relative;
+
+    border-radius: 50%;
+    height: 37vh;
+    box-shadow:3px 3px 10px #bec5c0;   
+
+    transition: 1s ease-in;
+    animation: 1s infinite alternate bougerImage, 1s infinite alternate glowimage;
+}
+@keyframes glowimage{
+    from{
+        box-shadow:3px 3px 10px #bec5c0,
+    }
+    to{
+        box-shadow:
+            3px 3px 22px #d2d2d2
+    ;
+    }
+
+}
+@keyframes bougerImage {
+    from {
+        transform: translateY(3px);
+        transform: rotate3d(40px);
+      }
+      to {
+        transform: translateY(0);
+        transform: rotate3d(0px);
+
+      }
+    
+}
+
+.moiContainer img:hover{
+    filter: grayscale(100%);
+    transition: 1s ease-in;
+
+
+}
+
+
+.debutText{
+    
+    position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 2px 2px 2px 30px;
+    height: 19rem;
+    width: 19rem;
+    border:solid 2px #4a0303;
+
+    background-color: #031906;
+    transition: 1s ease-in;
+
+}
+.debutText:hover{
+    background-color: #311e4a;
+    box-sizing: border-box;
+    transition: 1s ease-in;
+
+}
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 1rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+
+    z-index: 4;
+    transition: 1s ease-in;
+
+}
+
+
+
+@keyframes afficherText {
+
+    
+}
+.test{
+    transition: 3s;
+}
+.background{
+    position: relative;
+}
+.debutText::before{
+    content: '';
+    position: absolute;
+    inset: -4px;
+    z-index: -1;
+    background: linear-gradient(90deg, #831481, #670fd9, #0e1138,#4a0303,  #831481);
+    background-size: 600%; 
+    filter: blur(1px);
+    animation: glow 18s linear infinite;
+}
+.avant{
+    width: 19rem;
+    height: 19rem;
+    z-index: 5;
+    opacity: 0;
+
+    transition: 1s ease-in;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+
+
+
+}
+.autre{
+    position: relative;
+}
+
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+
+    
+
+
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+
+    #debut{     
+        padding-top: 21rem; 
+    }
+
+
+
+
+.debutText p:nth-child(1)
+{
+    font-size: 2rem;
+    font-weight: 600;
+    background:linear-gradient(#f1f2f1, #5158b0);
+    background-clip: text;
+    color: transparent;
+}
+.debutText p:nth-child(2)
+{
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.debutText p:nth-child(2) strong
+{
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0),
+    1px 1px 0px white;
+}
+.debutText p:nth-child(3)
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0 0px 10px;
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(45deg, #831481, #670fd9, #38a956 80%, #831481);
+    background-size: 600%;
+    background-clip: text;
+    animation: glow 18s linear infinite;
+    opacity: 0;
+    transition: 1s ease-out;
+
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 600%;
+    }
+}
+.project{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+
+
+.cursor1{
+
+}
+
+.skills{
+    cursor: pointer;
+    transition: 5s ease-in ;
+
+    
+
+}
+@keyframes appparaitre {
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+#project{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    
+
+}
+#project >h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 3px 3px 1px #000000,
+    2px 3px 1px #d42525;
+    opacity: 0;
+    transition: 2s ease-in;
+    font-size: 1.7rem;
+    padding-top: 5rem;
+    padding-bottom: 0.8rem;
+}
+.containerProject{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    z-index: 2;
+}
+
+.eachContainerProject{
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 3rem;
+    z-index: 2;
+    opacity: 0;
+
+    transition: 2s ease-in;
+
+}
+.eachContainerProject div{
+    border-radius: 1rem;
+    display: grid;
+    align-self: center;
+    position: relative;
+    transition: 500ms ease-out;
+}
+
+.eachContainerProject div div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+    align-content: center;
+
+
+
+}
+.eachContainerProject div div:hover{
+        filter: brightness(100%);
+}
+.technology p{
+
+    background: linear-gradient(90deg, #0e1138, #553969, #3b0a7a,#553969, #0e1138);
+    background-size: 600%;
+    animation: glow 10s ease-in infinite;
+    border: #bec5c0 2px solid;
+    border-radius: 10px;
+    padding: 0.5rem;   
+    height: min-content;
+    
+}
+.technology p:hover{
+    filter: brightness(250%);
+}
+.eachContainerProject div:hover{
+    background:rgba(255, 255, 255, 0.5);
+    filter: brightness(50%);
+    transition: 500ms ease-out;
+
+}
+.eachContainerProject div::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    background: linear-gradient(45deg, #330257 0%, #311e4a 80%);
+    border-radius: 1rem;
+}
+.eachContainerProject div h2{
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px #000000, 2px 2px 0px rgba(0,0,0,0.15);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.eachContainerProject div p{
+    font-size:1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px #000000;
+    text-align: center;
+}
+
+.eachContainerProject div i{
+    position: absolute;
+    bottom: 89%;
+    left: 96%;
+}
+.eachContainerProject::after{
+    z-index: -2;
+    position: absolute;
+    content: '';   
+    inset: -2%;
+}
+.eachContainerProject:hover::after{
+    filter: brightness(50%);
+
+}
+.eachContainerProject p, .eachContainerProject h2{
+    display: inline;
+}
+
+
+
+.icongit i{
+        font-size: 500%;
+    }
+
+
+
+@media all and (min-width: 300px) and (max-width: 375px)  
+{   
+    html{
+        font-size: 13px;
+    }
+
+    .navbar{
+        gap: 1rem;
+        height: 4rem;
+    }
+    .navbarGauche{
+ 
+        font-size: 1.5rem;   
+        padding-left: 0.1rem;  
+    }
+
+    .navbarMilieu{
+        font-size: 0.8rem;
+    }
+
+    #debut{     
+        padding-top: 27rem; 
+    }
+    .avant{
+        width: 11rem;
+        height: 11rem;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .moiContainer img{
+        height: 11rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 0.9rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1rem;
+    }
+       #project > h1{
+        font-size: 1rem;
+        padding-top: 7rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1rem;    
+    }
+    .icongit i{
+        font-size: 200%;
+    }
+}
+@media all and (min-width: 300px) and (max-width: 375px) and (min-height:600px) and (max-height:800px)  
+{   
+    html{
+        font-size: 11px;
+    }
+    #debut{     
+        padding-top: 23rem; 
+    }
+
+}
+@media all and (min-width: 300px) and (max-width: 375px) and (min-height:300px) and (max-height:600px)  
+{   
+  
+    html{
+        font-size: 9.8px;
+    }
+        .navbar{
+        gap: 5rem;
+    }
+    #debut{     
+        padding-top: 21rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 375px) and (min-height:800px)
+{
+
+        .navbar{
+        gap: 1.2rem;
+        height: 4rem;
+    }
+}
+
+
+
+
+/*375*/
+@media all and (min-width: 375px) and (max-width: 414px)  
+{   
+    html{
+        font-size: 15px;
+    }
+
+    .navbar{
+        gap: 1.5rem;
+        height: 4rem;
+    }
+    .navbarGauche{
+ 
+        font-size: 1.7rem;   
+        padding-left: 0;  
+    }
+
+    .navbarMilieu{
+        font-size: 0.8rem;
+    }
+
+    #debut{     
+        padding-top: 21rem; 
+    }
+    .avant{
+        width: 11rem;
+        height: 11rem;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .moiContainer img{
+        height: 11rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 0.9rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1rem;
+    }
+       #project > h1{
+        font-size: 1rem;
+        padding-top: 7rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1rem;    
+    }
+    .icongit i{
+        font-size: 200%;
+    }
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (min-height:600px) and (max-height:750px)  
+{   
+    html{
+        font-size: 12.5px;
+    }
+    #debut{     
+        padding-top: 21rem; 
+    }
+        .avant{
+        width: 11rem;
+        height: 11rem;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (min-height:300px) and (max-height:600px)  
+{   
+  
+    html{
+        font-size: 12px;
+    }
+    #debut{     
+        padding-top: 17rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (min-height:750px)
+{
+
+        .navbar{
+        gap: 0.6rem;
+        height: 4rem;
+    }
+
+    
+}
+
+
+@media all and (min-width: 414px) and (max-width: 500px)  
+{   
+    html{
+        font-size: 14.5px;
+    }
+
+    .navbar{
+        gap: 2rem;
+        height: 4rem;
+    }
+    .navbarGauche{
+ 
+        font-size: 1.8rem;   
+        padding-left: 0;  
+    }
+
+    .navbarMilieu{
+        font-size: 0.9rem;
+    }
+
+    #debut{     
+        padding-top: 21rem; 
+    }
+    .avant{
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .moiContainer img{
+        height: 12rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 0.9rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1rem;
+    }
+       #project > h1{
+        font-size: 1rem;
+        padding-top: 7rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1.1rem;    
+    }
+            .eachContainerProject div{
+            width: auto;
+            
+        }
+    .icongit i{
+        font-size: 200%;
+    }
+}
+@media all and (min-width: 414px) and (max-width: 500px) and (min-height:600px) and (max-height:750px)  
+{   
+    html{
+        font-size: 13px;
+    }
+    #debut{     
+        padding-top: 22rem; 
+    }
+
+}
+@media all and (min-width: 414px) and (max-width: 500px) and (min-height:300px) and (max-height:600px)  
+{   
+  
+    html{
+        font-size: 13px;
+    }
+    #debut{     
+        padding-top: 17rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 500px) and (max-width: 800px)  
+{   
+    html{
+        font-size: 15px;
+    }
+
+    .navbar{
+        gap: 9.8rem;
+        height: 4rem;
+    }
+    .navbarGauche{
+ 
+        font-size: 2rem;   
+        padding-left: 0;  
+    }
+
+    .navbarMilieu{
+        font-size: 0.9rem;
+    }
+
+    #debut{     
+        padding-top: 21.5rem; 
+    }
+    .avant{
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .moiContainer img{
+        height: 12rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 0.9rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1rem;
+    }
+       #project > h1{
+        font-size: 1rem;
+        padding-top: 7rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1rem;    
+    }
+    .icongit i{
+        font-size: 200%;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 800px) and (min-height:600px) and (max-height:750px)  
+{   
+    html{
+        font-size: 14px;
+    }
+    #debut{     
+        padding-top: 17rem; 
+    }
+
+}
+@media all and (min-width: 500px) and (max-width: 800px) and (min-height:300px) and (max-height:600px)  
+{   
+  
+    html{
+        font-size: 13px;
+    }
+    #debut{     
+        padding-top: 17rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*corriger distance entre image et text*/
+@media all and (min-width: 650px) and (max-width: 800px) 
+{   
+  
+       .avant{
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+
+
+@media all and (min-width: 800px) and (max-width: 1180px)  
+{   
+    html{
+        font-size: 16px;
+    }
+
+    .navbar{
+        gap: 19rem;
+        height: 4rem;
+    }
+    .navbarGauche{
+ 
+        font-size: 2rem;   
+        padding-left: 2rem;  
+    }
+
+    .navbarMilieu{
+        font-size: 0.9rem;
+    }
+
+    #debut{     
+        padding-top: 24rem; 
+    }
+    .avant{
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .moiContainer img{
+        height: 15rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.9rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.9rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.9rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1.3rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 1.2rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1.2rem;
+    }
+       #project > h1{
+        font-size: 1rem;
+        padding-top: 7rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1.1rem;    
+    }
+    .icongit i{
+        font-size: 250%;
+    }
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:785px) and (max-height:1000px)  
+{   
+    html{
+        font-size: 14px;
+    }
+    #debut{     
+        padding-top: 20.5rem; 
+    }
+
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:640px) and (max-height:785px)  
+{   
+  
+    html{
+        font-size: 13px;
+    }
+    #debut{     
+        padding-top: 16.5rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:550px) and (max-height:640px)  
+{   
+  
+    html{
+        font-size: 12px;
+    }
+    #debut{     
+        padding-top: 15rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:470px) and (max-height:550px)  
+{   
+  
+    html{
+        font-size: 10px;
+    }
+    #debut{     
+        padding-top: 15.4rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:400px) and (max-height:470px)  
+{   
+  
+    html{
+        font-size: 8.5px;
+    }
+    #debut{     
+        padding-top: 15.6rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }   
+}
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:300px) and (max-height:400px)  
+{   
+  
+    html{
+        font-size: 8px;
+    }
+    #debut{     
+        padding-top: 14.6rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+@media all and (min-width: 800px) and (max-width: 1180px) and (min-height:910px)  
+{   
+
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*corriger distance entre image et text*/
+@media all and (min-width: 900px) and (max-width: 1180px) and (max-height:550px) 
+{   
+  
+       .avant{
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 64%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 850px) and (max-width: 1180px) and (max-height:785px) 
+{   
+  
+       .avant{
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media all and (min-width: 900px) and (max-width: 1180px) and (max-height:1000px) 
+{   
+  
+       .avant{
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+/*pour ajuter la taille ddu navbar*/
+@media all and (min-width: 570px) and (max-width:650px)
+{
+    .navbarGauche{
+        font-size: 2rem;
+        padding-left: 0.4rem;
+    }
+    .navbarMilieu{
+        font-size: 0.9rem;
+    }
+}
+@media all and (min-width: 490px) and (max-width:570px)
+{
+    .navbarGauche{
+        font-size: 1.5rem;
+        padding-left: 0.2rem;
+    }
+    .navbarMilieu{
+        font-size: 0.8rem;
+    }
+        .debutText p:nth-child(1){
+        font-size: 1.2rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 1.1rem;
+
+    }
+    .debutText p:nth-child(3){
+        font-size: 1.2rem;
+
+    }
+}
+
+
+  /*ajuster navbar*/
+
+
+
+
+
+
+
+@media all and (min-width: 1180px)  
+{   
+    html{
+        font-size: 16px;
+    }
+
+
+
+    #debut{     
+        padding-top: 18rem; 
+    }
+    .avant{
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .moiContainer img{
+        height: 18rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 1.7rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1.8rem;
+    }
+       #project > h1{
+        font-size: 1.5rem;
+        padding-top: 6rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .eachContainerProject div{
+            min-height: 1vh;
+            width: auto;
+            
+        }
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1.3rem;    
+    }
+    .icongit i{
+        font-size: 300%;
+    }
+}
+@media all and (min-width: 1180px)  and (max-height:700px)
+{   
+    html{
+        font-size: 16px;
+    }
+
+
+
+    #debut{     
+        padding-top: 15rem; 
+    }
+    .avant{
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+    }
+    .debutText{
+
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .moiContainer img{
+        height: 18rem;
+    }
+
+    .avant::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #031906;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+
+.avant::before{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #4a0303;
+    left: 99.9%;
+    top: 45%;
+    z-index: 2;
+}
+
+.avant:hover::after{
+    content: '';
+    position: absolute;
+    border: 0.7rem solid transparent;
+    border-left-color: #311e4a;
+    left: 99%;
+    top: 45%;
+    z-index: 4;
+    transition: 1s ease-in;
+}
+    .debutText p:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .debutText p:nth-child(2){
+        font-size: 1.7rem;
+    }
+    .debutText p:nth-child(3){
+        font-size: 1.8rem;
+    }
+       #project > h1{
+        font-size: 1.5rem;
+        padding-top: 6rem;
+        }
+        .containerProject{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .eachContainerProject div{
+            min-height: 1vh;
+            width: auto;
+            
+        }
+    .eachContainerProject div h2, .eachContainerProject div p{
+        font-size: 1.3rem;    
+    }
+    .icongit i{
+        font-size: 300%;
+    }
+}
+
+
+
+
+@media all and (min-width: 1440px)  
+{   
+    html{
+        font-size: 18px;
+    }
+
+
+    .navbarGauche{
+ 
+        font-size: 3rem;   
+        padding-left: 5rem;  
+    }
+
+    .navbarMilieu{
+        font-size: 1.3rem;
+    }
+
+    #debut{     
+        padding-top: 18rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 39%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 63%;
+        transform: translate(-50%, -50%);
+    }
+
+    .icongit i{
+        font-size: 350%;
+    }
+}
+
+
+
+@media all and (min-width: 1600px)  
+{   
+    html{
+        font-size: 19px;
+    }
+
+
+    #debut{     
+        padding-top: 16rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .icongit i{
+        font-size: 350%;
+    }
+}
+
+
+@media all and (min-width: 1920px)  
+{   
+    html{
+        font-size: 22px;
+    }
+
+
+    #debut{     
+        padding-top: 14rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+    }
+
+    .icongit i{
+        font-size: 350%;
+    }
+}
+
+
+
+
+@media all and (min-width: 2560px)  
+{   
+    html{
+        font-size: 25px;
+    }
+
+
+    #debut{     
+        padding-top: 14rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .icongit i{
+        font-size: 350%;
+    }
+}
+@media all and (min-width: 2560px)  
+{   
+    html{
+        font-size: 25px;
+    }
+
+
+    #debut{     
+        padding-top: 15rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .icongit i{
+        font-size: 350%;
+    }
+}
+@media all and (min-width: 2560px) and (max-height:1140px) 
+{   
+    #debut{     
+        padding-top: 12rem; 
+    }
+
+}
+
+
+@media all and (min-width: 3440px)  
+{   
+    html{
+        font-size: 27px;
+    }
+
+
+    #debut{     
+        padding-top: 13.2rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .icongit i{
+        font-size: 400%;
+    }
+}
+
+
+@media all and (min-width: 3840px)  
+{   
+    html{
+        font-size: 34px;
+    }
+
+
+    #debut{     
+        padding-top: 19rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .icongit i{
+        font-size: 400%;
+    }
+}
+@media all and (min-width: 3840px) and (max-height:1800px) 
+{   
+    html{
+        font-size: 32px;
+    }
+    #debut{     
+        padding-top: 13rem; 
+    }
+
+}
+
+@media all and (min-width: 5120px)  
+{   
+    html{
+        font-size: 42px;
+    }
+
+
+    #debut{     
+        padding-top: 22rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .icongit i{
+        font-size: 500%;
+    }
+}
+@media all and (min-width: 5120px) and (max-height:1500px) 
+{   
+    html{
+        font-size: 28px;
+    }
+    #debut{     
+        padding-top: 21rem; 
+    }
+
+}
+@media all and (min-width: 5120px) and (min-height:2000px) and (max-height:2160px) 
+{   
+    html{
+        font-size: 35px;
+    }
+    #debut{     
+        padding-top: 20rem; 
+    }
+
+}
+
+
+@media all and (min-width: 7680px)  
+{   
+    html{
+        font-size: 58px;
+    }
+
+
+    #debut{     
+        padding-top: 22rem; 
+    }
+    .avant{
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+    }
+        .moiContainer{
+        position: absolute;
+        top: 50%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .icongit i{
+        font-size: 500%;
+    }
+}

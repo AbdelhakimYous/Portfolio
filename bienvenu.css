@@ -1,0 +1,370 @@
+.bienvenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+}
+.bienvenu p{
+    position: absolute;
+    opacity: 0;   
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    color: transparent;
+    background: linear-gradient(rgb(255, 255, 255), rgb(13, 30, 46));
+    filter: blur(0.5px);
+    background-clip: text;
+    background-size: 600%;
+    font-weight: 700;
+    z-index: 3;
+
+    transition: 1s ease-in;
+}
+    .bienvenu p:nth-child(1) { top: 10%; right: 78%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: 4%; left: 74%; }
+    .bienvenu p:nth-child(8) { top: 20%; left: 77%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 22%; left: 4%; }
+
+.bienvenu p:hover{
+    filter: brightness(150%);
+    animation: glow 10s linear infinite !important;
+    transition: 1s ease-in !important;
+ 
+    
+}
+
+@keyframes glow{
+    from{
+
+        
+        }
+    to{
+        background-position: 600%;
+    }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+    .bienvenu p {
+        font-size: 1.1rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -6%; right: 45%; }
+    .bienvenu p:nth-child(5) { top: -21%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -7%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -26%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 28%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: -9%; left: 2%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 29%; left: 4%; }
+}
+
+
+
+
+
+
+@media all and (min-width: 375px) and (max-width: 414px) {
+    .bienvenu p {
+        font-size: 1.2rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 58%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: -1%; left: 44%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 4%; }
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (max-height: 835px)
+{     
+    .bienvenu p {
+        font-size: 1.2rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 30%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 28%; left: 4%; }
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (min-height:350px) and (max-height: 610px)  
+{     
+    .bienvenu p {
+        font-size: 1rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 30%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 28%; left: 4%; }
+}
+@media all and (min-width: 375px) and (max-width: 414px) and (min-height:350px) and (max-height: 499px)  
+{     
+    .bienvenu p {
+        font-size: 0.9rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 30%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 28%; left: 4%; }
+}
+
+
+
+@media all and (min-width: 414px) and (max-width: 500px) {
+    .bienvenu p {
+        font-size: 1.2rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: -6%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: -6%; left: 4%; }
+}
+@media all and (min-width: 414px) and (max-width: 500px) and (min-height: 300px) and (max-height: 760px) {
+    .bienvenu p {
+        font-size: 1.2rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 42%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 47%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -17%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -23%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -27%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 37%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: -15%; left: 12%; }
+    .bienvenu p:nth-child(10) { top: 45%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 34%; left: 4%; }
+}   
+
+
+
+
+
+
+
+
+@media all and (min-width: 500px) and (max-width:800px)  and (min-height: 1150px) and (max-height:1400px) {
+
+    .bienvenu p{
+        font-size: 1rem;
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 64%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 60%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 20%; left: 68%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 67%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 64%; }
+    .bienvenu p:nth-child(11) { top: 22%; left: 4%; }
+}
+@media all and (min-width: 500px) and (max-width:800px)  and (min-height: 850px) and (max-height:1150px) {
+        .bienvenu p{
+        font-size: 1.4rem;  
+    }
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 53%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 69%; }
+    .bienvenu p:nth-child(4) { top: 0%; right: 38%; }
+    .bienvenu p:nth-child(5) { top: -10%; right: 64%; }
+    .bienvenu p:nth-child(6) { top: -4%; left: 70%; }
+    .bienvenu p:nth-child(7) { top: -19%; left: 64%; }
+    .bienvenu p:nth-child(8) { top: 32%; left: 78%; }
+    .bienvenu p:nth-child(9) { top: -20%; left: 7%; }
+    .bienvenu p:nth-child(10) { top: 44%; right: 64%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 4%; }
+}
+
+@media all and (min-width: 500px) and (max-width:800px)  and (min-height: 100px) and (max-height:850px) {
+
+    .bienvenu p{
+        font-size: 1.4rem;
+    }
+    .bienvenu p:nth-child(1) { top: 36%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 50%; right: 38%; }
+    .bienvenu p:nth-child(3) { top: 40%; left: 76%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 58%; }
+    .bienvenu p:nth-child(5) { top: -8%; right: 74%; }
+    .bienvenu p:nth-child(6) { top: -19%; left: 69%; }
+    .bienvenu p:nth-child(7) { top: -7%; left: 64%; }
+    .bienvenu p:nth-child(8) { top: 35%; left: 68%; }
+    .bienvenu p:nth-child(9) { top: -22%; left: 7%; }
+    .bienvenu p:nth-child(10) { top: 45%; right: 73%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 4%; }
+}
+
+
+
+
+@media all and (min-width: 800px) and (max-width:1024px) {
+
+    .bienvenu p{
+        font-size: 1.8rem;
+    }
+    .bienvenu p:nth-child(1) { top: 43%; right: 82%; }
+    .bienvenu p:nth-child(2) { top: 45%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 74%; }
+    .bienvenu p:nth-child(4) { top: -4%; right: 58%; }
+    .bienvenu p:nth-child(5) { top: -17%; right: 78%; }
+    .bienvenu p:nth-child(6) { top: -6%; left: 66%; }
+    .bienvenu p:nth-child(7) { top: -21%; left: 44%; }
+    .bienvenu p:nth-child(8) { top: 20%; left: 83%; }
+    .bienvenu p:nth-child(9) { top: -21%; left: 77%; }
+    .bienvenu p:nth-child(10) { top: 54%; right: 64%; }
+    .bienvenu p:nth-child(11) { top: 22%; left: 4%; }
+}
+@media all and (min-width: 800px) and (max-width:1024px) and (min-height:1000px) {
+
+    .bienvenu p{
+        font-size: 1.9rem;
+    }
+    .bienvenu p:nth-child(1) { top: 43%; right: 82%; }
+    .bienvenu p:nth-child(2) { top: 45%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 74%; }
+    .bienvenu p:nth-child(4) { top: -1.5%; right: 43%; }
+    .bienvenu p:nth-child(5) { top: -13%; right: 78%; }
+    .bienvenu p:nth-child(6) { top: -8%; left: 66%; }
+    .bienvenu p:nth-child(7) { top: -23%; left: 44%; }
+    .bienvenu p:nth-child(8) { top: 20%; left: 84%; }
+    .bienvenu p:nth-child(9) { top: -21%; left: 77%; }
+    .bienvenu p:nth-child(10) { top: 58%; right: 64%; }
+    .bienvenu p:nth-child(11) { top: 12%; left: 4%; }
+}
+
+
+@media all and (min-width: 1024px)  {
+
+    .bienvenu p:nth-child(1) { top: 30%; right: 48%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 48%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -14%; left: 68%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 20%; left: 74%; }
+    .bienvenu p:nth-child(9) { top: 54%; left: 72%; }
+    .bienvenu p:nth-child(10) { top: 52%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 22%; left: 4%; }
+}
+@media all and (min-width: 1024px) and (min-height:600px) and (max-height: 1150px) {
+
+    .bienvenu p:nth-child(1) { top: 6%; right: 85%; }
+    .bienvenu p:nth-child(2) { top: 48%; right: 48%; }
+    .bienvenu p:nth-child(3) { top: 44%; left: 64%; }
+    .bienvenu p:nth-child(4) { top: -12%; right: 45%; }
+    .bienvenu p:nth-child(5) { top: -18%; right: 72%; }
+    .bienvenu p:nth-child(6) { top: -19%; left: 74%; }
+    .bienvenu p:nth-child(7) { top: -24%; left: 54%; }
+    .bienvenu p:nth-child(8) { top: 30%; left: 84%; }
+    .bienvenu p:nth-child(9) { top: 0%; left: 78%; }
+    .bienvenu p:nth-child(10) { top: 42%; right: 74%; }
+    .bienvenu p:nth-child(11) { top: 22%; left: 4%; }
+}
+
+
+
+
+/* Très grand écran QHD/4K (2560x1440, 3440x1440, 3840x2160) */
+@media all and (min-width: 1920px) and (max-width: 2499px) {
+
+    .bienvenu p:nth-child(1) { top: 13%; right: 80%; }
+    .bienvenu p:nth-child(2) { top: 54%; right: 52%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 68%; }
+    .bienvenu p:nth-child(4) { top: -8%; right: 52%; }
+    .bienvenu p:nth-child(5) { top: -15%; right: 74%; }
+    .bienvenu p:nth-child(6) { top: -15%; left: 73%; }
+    .bienvenu p:nth-child(7) { top: 8%; left: 82%; }
+    .bienvenu p:nth-child(8) { top: 26%; left: 82%; }
+    .bienvenu p:nth-child(9) { top: 60%; left: 80%; }
+    .bienvenu p:nth-child(10) { top: 58%; right: 84%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 8%; }
+}
+
+
+@media all and (min-width: 2560px) and (max-width: 3439px)
+{
+    .bienvenu p:nth-child(1) { top: 13%; right: 82%; }
+    .bienvenu p:nth-child(2) { top: 54%; right: 52%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 68%; }
+    .bienvenu p:nth-child(4) { top: -8%; right: 52%; }
+    .bienvenu p:nth-child(5) { top: -15%; right: 78%; }
+    .bienvenu p:nth-child(6) { top: -15%; left: 73%; }
+    .bienvenu p:nth-child(7) { top: 8%; left: 82%; }
+    .bienvenu p:nth-child(8) { top: 26%; left: 82%; }
+    .bienvenu p:nth-child(9) { top: 60%; left: 80%; }
+    .bienvenu p:nth-child(10) { top: 58%; right: 84%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 8%; }
+}
+
+
+/* UltraWide et 5K+ (3440px, 3840px, 5120px, etc.) */
+@media all and (min-width: 3440px) and (max-width: 4095px) {
+
+    .bienvenu p:nth-child(1) { top: 13%; right: 82%; }
+    .bienvenu p:nth-child(2) { top: 54%; right: 52%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 68%; }
+    .bienvenu p:nth-child(4) { top: -8%; right: 52%; }
+    .bienvenu p:nth-child(5) { top: -15%; right: 78%; }
+    .bienvenu p:nth-child(6) { top: -15%; left: 73%; }
+    .bienvenu p:nth-child(7) { top: 8%; left: 82%; }
+    .bienvenu p:nth-child(8) { top: 26%; left: 82%; }
+    .bienvenu p:nth-child(9) { top: 60%; left: 80%; }
+    .bienvenu p:nth-child(10) { top: 58%; right: 84%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 8%; }
+}
+
+@media all and (min-width: 5120px) {
+
+    .bienvenu p:nth-child(1) { top: 13%; right: 72%; }
+    .bienvenu p:nth-child(2) { top: 45%; right: 52%; }
+    .bienvenu p:nth-child(3) { top: 50%; left: 68%; }
+    .bienvenu p:nth-child(4) { top: -20%; right: 52%; }
+    .bienvenu p:nth-child(5) { top: -15%; right: 88%; }
+    .bienvenu p:nth-child(6) { top: -15%; left: 73%; }
+    .bienvenu p:nth-child(7) { top: 2%; left: 86%; }
+    .bienvenu p:nth-child(8) { top: 26%; left: 82%; }
+    .bienvenu p:nth-child(9) { top: 55%; left: 80%; }
+    .bienvenu p:nth-child(10) { top: 51%; right: 84%; }
+    .bienvenu p:nth-child(11) { top: 32%; left: 5%; }
+}

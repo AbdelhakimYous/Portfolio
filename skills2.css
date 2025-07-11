@@ -1,0 +1,168 @@
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    height: 100vh;
+}
+#skills h1{
+    color: transparent;
+    text-shadow: 0 0 white,
+    2px 2px 2px black
+    ;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    transition: 2s ease-in;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    
+}
+#skills div{
+    opacity: 0;
+    transition: 2s ease-in;
+
+}
+
+#skills div div{
+    position: relative;
+    z-index: 3;
+
+}
+#skills div div h1 {
+    font-size: 2rem;
+    color: transparent;
+    text-align: center;
+    background-size: 800%;
+    background-clip: text;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.032),
+    1px 1px 0px rgba(255, 255, 255, 0);
+    animation: glowing 2.5s linear infinite;
+
+
+}
+
+#skills div div h1::after{
+    content: '';
+    position: absolute;
+    background-clip: text;
+    inset: -4px; 
+    filter: blur(10px);
+
+}
+
+
+@keyframes glowing{
+    
+    0%{
+        background-clip: text;
+
+
+        text-shadow: none;
+        }
+    100%{
+        background-clip: text;
+
+        color: #fff;
+        text-shadow: 0 0 10px #080f46,
+        0 0 20px #080f46,
+        0 0 40px #080f46,
+        0 0 80px #080f46,
+        0 0 160px #080f46   ;
+
+    }
+
+}
+
+
+
+#skills div img{
+    height: 5vh;
+    transition: 600ms ease-in;
+}
+#skills div img:hover{
+    object-fit: contain;
+    transition: 600ms ease-in;
+    filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(132deg) brightness(155%) contrast(88%);
+}
+#skills div div{
+    width: 100%;
+
+}
+
+
+@media all and (min-width: 321px) and (max-width: 374px) 
+{
+
+
+}
+
+
+
+@media all and (min-width: 375px) and (max-width: 413px)
+{
+
+
+}
+
+
+
+
+
+
+
+@media all and (min-width: 414px) and (max-width: 479px)
+{  
+
+
+}
+
+
+
+
+
+@media all and (min-width: 800px)
+{
+       #skills div img{
+    height: 6vh;
+   }
+
+}
+@media all and (min-width: 1500px)
+{
+       #skills div img{
+    height: 6vh;
+   }
+
+}
+@media all and (min-width: 1920px)
+{
+   #skills div img{
+    height: 8vh;
+}
+}
+@media all and (min-width: 2560px)
+{
+   #skills div img{
+    height: 9vh;
+   }
+}
+@media all and (min-width: 3440px)
+{
+       #skills div img{
+    height: 8vh;
+   }
+}
+@media all and (min-width: 3840px) and (min-height:2160px)
+{
+
+   #skills div img{
+    height: 10vh;
+   }
+}

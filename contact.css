@@ -1,0 +1,145 @@
+#containerContact{
+    display: flex;
+    justify-content: center;
+    padding-top: 5.5rem;
+    transition: 2s ease-in;
+    height: 100vh;
+    
+}
+#containerContact h1{
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 0 white,
+    2px 2px 2px #000000;
+    font-size: 3rem;
+}
+.contactform{
+    display: flex;
+    width: 80%;
+    gap: 1.2rem;
+    flex-direction: column;
+    background-color: transparent;
+}
+.contactform input:nth-child(2){
+    height: 3vh;
+}
+.contactform input:nth-child(3){
+    height: 3vh;
+}
+
+textarea
+{
+
+    background-color: transparent;
+    width: 100%;
+    overflow-wrap: break-word;
+    resize: none;
+    height: 48vh;
+}
+.contactform{
+    z-index: 3;
+}
+form button{
+    position: relative;
+    height: 4rem;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    color: transparent;
+    text-shadow: 0 0 0 white,
+    2px 2px 2px #000000;
+
+
+}
+.contactform button::after{
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 0.4rem;
+    z-index: -1;
+    background: linear-gradient(45deg, #831481, #670fd9, #38a956 80%, #831481);
+    background-size: 600%;
+    animation: glowbutton 18s linear infinite;
+    filter: blur(18px);
+
+}
+@keyframes glowbutton{
+    
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 600%;
+    }
+}
+
+.contactform input, textarea{
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0 0 5px #ffffff,
+    0 0 2px #7a007e,
+    0 0 3px #0645a3;
+    transition: 1.5s ease-in;
+    
+
+
+}
+
+
+.contactform button:hover{
+    filter: brightness(150%);
+    transition: 1.5s ease-in;
+
+}
+   form input, form textarea, form button{
+        font-size: 1rem;
+
+    }
+
+
+
+@media all and (min-width: 321px) and (max-width: 374px) {
+
+
+} 
+
+@media all and (min-width: 375px) and (max-width: 413px) {
+
+
+} 
+@media all and (min-width: 414px) and (max-width: 479px) and (min-height:730px) and (max-height:835px) {
+
+
+} 
+@media all and (min-width: 414px) and (max-width: 479px) and (min-height:630px) and (max-height:730px) {
+
+
+} 
+
+
+
+
+@media all and (min-width: 1500px){
+
+
+} 
+@media all and (min-width: 1920px){
+
+
+
+} 
+@media all and (min-width: 2560px){
+
+
+} 
+@media all and (min-width: 3440px){
+
+
+
+} 
+@media all and (min-width: 3840px) and (min-height:2160px){
+
+
+
+} 
